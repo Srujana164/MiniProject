@@ -113,8 +113,8 @@ public class CarSalesSystem extends JFrame implements ActionListener, ComponentL
 		statusLabel.setBorder(new javax.swing.border.EtchedBorder());
 
 		// load the picture into the top panel
-		pictureLabel.setIcon(new ImageIcon("vu.png"));
-		//pictureLabel.setIcon(new ImageIcon("image1.jpeg"));
+		//pictureLabel.setIcon(new ImageIcon("vu.png"));
+		pictureLabel.setIcon(new ImageIcon("image1.jpeg"));
 		
 		titlePanel.add(carCoLabel);
 		titlePanel.add(salesSysLabel);
