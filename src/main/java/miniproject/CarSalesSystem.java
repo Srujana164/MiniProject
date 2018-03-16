@@ -4,45 +4,7 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.event.*;
-/**
- * This class is the main JFrame of the application, and deals with the car collection.
- * It also creates instances of the other panels (add car, view car, etc) and incorporates
- * them into the main frame. This is hierarchically, the highest class.
- * @
- *
- * PUBLIC FEATURES:
- * // Constructors
- *    public CarSalesSystem(String f)
- *
- * // Methods
- *    public void aboutMenuItemClicked()
- *    public void actionPerformed(ActionEvent ev)
- *    public void addCarUpdateListener(Object listener)
 
- *    public int addNewCar(Car c)
- *    public void closing()
- *    public void componentHidden(ComponentEvent ev)
- * 	  public void componentMoved(ComponentEvent ev)
- *	  public void componentResized(ComponentEvent ev)
- *    public void componentShown(ComponentEvent ev)
- *    public static double[] convertToRange(String s)
- *    public Car[] getAllCars()
- *    public boolean getCarsUpdated()
- *    public double getStatistics(int type)
- *    public static void main(String[] args)
- *    public Car[] search(int minAge, int maxAge)
- *    public Car[] search(int minPrice, int maxPrice, double minDistance, double maxDistance)
- *    public void setCarsUpdated()
- *    public void stateChanged(ChangeEvent ev)
- *    public static Car[] vectorToCar(Vector v)
- *
- * COLLABORATORS:
- *    AboutDialog, CarsCollection, WindowCloser, WelcomePanel, AddCarPanel
- *    ShowAllCarsPanel, SearchByAgePanel, SearchByOtherPanel
- *
- * @version 1.0, 16 Oct 2004
- * @author Adam Black
- */
 public class CarSalesSystem extends JFrame implements ActionListener, ComponentListener, ChangeListener
 {
 	/**
@@ -151,8 +113,8 @@ public class CarSalesSystem extends JFrame implements ActionListener, ComponentL
 		statusLabel.setBorder(new javax.swing.border.EtchedBorder());
 
 		// load the picture into the top panel
-		//pictureLabel.setIcon(new ImageIcon("vu.png"));
-		pictureLabel.setIcon(new ImageIcon("image1.jpeg"));
+		pictureLabel.setIcon(new ImageIcon("vu.png"));
+		//pictureLabel.setIcon(new ImageIcon("image1.jpeg"));
 		
 		titlePanel.add(carCoLabel);
 		titlePanel.add(salesSysLabel);

@@ -2,36 +2,7 @@ package miniproject;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
-/**
- * This class contais the group of text fields representing the cars information visually
- * inside a panel.
- * @
- *
- * PUBLIC FEATURES:
- * // Constructors
- *    public CarDetailsComponents()
- *
- * // Methods
- *    public void clearTextFields()
- *    public void componentHidden(ComponentEvent ev)
- *    public void componentMoved(ComponentEvent ev)
- *    public void componentResized(ComponentEvent ev)
- *    public void componentShown(ComponentEvent ev)
- *    public void displayDetails(Car c)
- *    public JPanel getDetailsPanel()
- *    public String getInfoText()
- *    public String getKmText()
- *    public String getManufacturerText()
- *    public String getModelText()
- *    public String getPriceText()
- *    public String getYearText()
- *    public void setFocusManufacturerTextField()
- *
- * COLLABORATORS:
- *
- * @version 1.0, 16 Oct 2004
- * @author Adam Black
- */
+
 public class CarDetailsComponents extends JPanel implements ComponentListener
 {
 	private JLabel manufacturerLabel = new JLabel("Manufacturer");

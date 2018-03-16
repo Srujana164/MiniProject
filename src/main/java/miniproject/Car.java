@@ -1,35 +1,6 @@
 package miniproject;
 import java.util.*;
-/**
- * Stores information about cars. Also calculates the cars age from the current date.
- * @
- *
- * PUBLIC FEATURES:
- * // Constructors
- *    public Car()
- *    public Car(String man, String mod, String info)
- *
- * // Methods
- *    public int getAge()
- *    public String getInformation()
- *    public String getInformation()
- *    public double getKilometers()
- *    public String getManufacturer()
- *    public String getModel()
- *    public int getPrice()
- *    public int getYear()
- *    public void setInformation(String info)
- *    public void setKilometers(double km)
- *    public void setManufacturer(String man)
- *    public void setModel(String mod)
- *    public void setPrice(int cost)
- *    public void setYear(int yr)
- *
- * COLLABORATORS:
- *
- * @version 1.0, 16 Oct 2004
- * @author Adam Black
- */
+
 public class Car implements java.io.Serializable
 {
 	private String model;
