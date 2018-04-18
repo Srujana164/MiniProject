@@ -22,7 +22,7 @@ pipeline {
             wrap([$class: 'Xvfb', screen: '1440x900x24']) {
 
   		echo 'Deploying....'
-  		sh ' cd target'
+  		sh 'dir /target/'
   		echo DevOps-1.0-SNAPSHOT.jar
 		}
                 
