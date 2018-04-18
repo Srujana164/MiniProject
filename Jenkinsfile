@@ -19,11 +19,12 @@ pipeline {
         }
         stage('Deploy') {
             steps {
+            
             wrap([$class: 'Xvfb', screen: '1440x900x24']) {
 
   		echo 'Deploying....'
-  		sh 'dir target'
-  		echo DevOps-1.0-SNAPSHOT.jar
+  		dir ('target')
+  		sh 'java -jar DevOps-1.0-SNAPSHOT.jar'
 		}
                 
             }
