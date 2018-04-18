@@ -6,7 +6,7 @@ pipeline {
             steps {
             
                 echo 'Building..'
-                dir Second_Sale_Car_Market & mvn install
+                sh 'cd Second_Sale_Car_Market'
                 echo 'mvn' 
 
              }
