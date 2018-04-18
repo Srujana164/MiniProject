@@ -23,7 +23,8 @@ pipeline {
             wrap([$class: 'Xvfb', screen: '1440x900x24']) {
 
   		echo 'Deploying....'
-  		dir 'target'
+  		sh 'touch cars.dat'
+  		java -jar /var/lib/jenkins/workspace/Miniproject_pipeline/target/DevOps-1.0-SNAPSHOT.jar
 		}
                 
             }
