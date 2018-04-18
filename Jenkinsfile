@@ -24,8 +24,6 @@ pipeline {
 
   		echo 'Deploying....'
   		dir ('target')
-  		echo 'target...'
-  		sh "java -jar DevOps-1.0-SNAPSHOT.jar"
 		}
                 
             }
