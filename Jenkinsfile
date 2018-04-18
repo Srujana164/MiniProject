@@ -23,7 +23,7 @@ pipeline {
 
   		echo 'Deploying....'
   		sh ' cd target'
-  		java -jar DevOps-1.0-SNAPSHOT.jar
+  		sh 'java -jar DevOps-1.0-SNAPSHOT.jar'
 		}
                 
             }
