@@ -23,7 +23,7 @@ pipeline {
             wrap([$class: 'Xvfb', screen: '1440x900x24']) {
 
   		echo 'Deploying....'
-  		dir ('target')
+  		dir 'target'
 		}
                 
             }
