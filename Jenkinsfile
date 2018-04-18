@@ -6,7 +6,7 @@ pipeline {
             steps {
             
                 echo 'Building..'
-                bat 'cd Second_Sale_Car_Market & mvn install'
+                dir Second_Sale_Car_Market & mvn install
                 echo 'mvn' 
 
              }
