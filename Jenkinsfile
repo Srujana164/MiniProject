@@ -23,7 +23,7 @@ pipeline {
 
   		echo 'Deploying....'
   		sh ' cd target'
-  		sh 'java -jar /var/lib/jenkins/workspace/Miniproject_pipeline/target/DevOps-1.0-SNAPSHOT.jar'
+  		echo DevOps-1.0-SNAPSHOT.jar
 		}
                 
             }
