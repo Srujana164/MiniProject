@@ -24,7 +24,7 @@ pipeline {
 
   		echo 'Deploying....'
   		sh 'touch cars.dat'
-  		java -jar /var/lib/jenkins/workspace/Miniproject_pipeline/target/DevOps-1.0-SNAPSHOT.jar
+  		sh 'java -jar /var/lib/jenkins/workspace/Miniproject_pipeline/target/DevOps-1.0-SNAPSHOT.jar'
 		}
                 
             }
