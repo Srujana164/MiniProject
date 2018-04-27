@@ -19,15 +19,11 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-             script {
-             echo 'deployment'
-    			step([$class: "RundeckNotifier",
-          			
-          		
-          			jobId: "1"])
-  		}
+             [$class: "RundeckNotifier",
+          				jobId: "1"]
+             	
            
     		}
-    }
-}
+    	}
+	}
 }
