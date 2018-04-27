@@ -20,10 +20,12 @@ pipeline {
         stage('Deploy') {
             steps {
              script {
-             echo 'deployment'
-    		 step([$class: "RundeckNotifier",
+             
+      	     wrap([[$class: "RundeckNotifier",
       				includeRundeckLogs: true,
-      				$jobId: "1"])
+      				$jobId: "1"]){
+					echo 'deployment'      				
+      				}
   			 }
            
     		}
