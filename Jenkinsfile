@@ -20,7 +20,7 @@ pipeline {
         stage('Deploy') {
             steps {
              echo 'deploying..'
-             $class: "RundeckNotifier"
+             step([$class: "RundeckNotifier", url: "http://localhost:4440/", Login: "admin", Password: "admin", jobId="1"])
     		}
     	}
 	}
