@@ -19,6 +19,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
+            echo 'deployment'
              script {
     			step([$class: "RundeckNotifier",
           			includeRundeckLogs: true,
