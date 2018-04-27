@@ -21,7 +21,7 @@ pipeline {
             steps {
              script {
              
-      	     wrap([$class: "RundeckNotifier",
+      	     wrap([$class: "Rundeck Notifier",
       				includeRundeckLogs: true,
       				$jobId: "1"]){
 					echo 'deployment'      				
