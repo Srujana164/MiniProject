@@ -21,9 +21,9 @@ pipeline {
             steps {
              script {
              echo 'deployment'
-    		 step([class: "RundeckNotifier",
+    		 step([$class: "RundeckNotifier",
       				includeRundeckLogs: true,
-      				jobId: "1"])
+      				$jobId: "1"])
   			 }
            
     		}
