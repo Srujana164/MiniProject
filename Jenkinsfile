@@ -21,21 +21,10 @@ pipeline {
             steps {
              script {
              echo 'deployment'
-    			step([$class: "RundeckNotifier",
-      includeRundeckLogs: true,
-      jobId: "1",
-      nodeFilters: "",
-      options: """
-               PARAM_1=value1
-               PARAM_2=value2
-               PARAM_3=
-               """,
-      rundeckInstance: "Default",
-      shouldFailTheBuild: true,
-      shouldWaitForRundeckJob: true,
-      tags: "",
-      tailLog: true])
-  					}
+    		 step([$class: "Rundeck Notifier",
+      				includeRundeckLogs: true,
+      				jobId: "1"])
+  			 }
            
     		}
     	}
