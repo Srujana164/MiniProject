@@ -22,12 +22,8 @@ pipeline {
              script {
     			step([$class: "RundeckNotifier",
           			includeRundeckLogs: true,
-          			jobId: "1"
-          rundeckInstance: "Default",
-          shouldFailTheBuild: true,
-          shouldWaitForRundeckJob: true,
-          tags: "",
-          tailLog: true])
+          			jobId: "1"]
+          )
   }
            
     		}
