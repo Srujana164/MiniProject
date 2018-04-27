@@ -19,14 +19,8 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-             script {
-             
-      	     wrap([$class: "RundeckNotifier"]){
-      	     		jobId =1 
-					echo 'deployment'      				
-      				}
-  			 }
-           
+             echo 'deploying..'
+             wrap([$class: 'RundeckNotifier'])
     		}
     	}
 	}
