@@ -23,7 +23,6 @@ pipeline {
     			step([$class: "RundeckNotifier",
           			includeRundeckLogs: true,
           			jobId: "1"
-          			nodeFilters: "",
           			options: """
                			PARAM_1=value1
                			PARAM_2=value2
