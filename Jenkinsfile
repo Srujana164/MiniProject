@@ -19,15 +19,19 @@ pipeline {
         }
         stage('Deploy') {
             steps {
+             script {
+    			step([$class: "RundeckNotifier",
+          			includeRundeckLogs: true,
+          			jobId: "1"
+          			nodeFilters: "",
+          
+          			rundeckInstance: "Default",
+          			shouldFailTheBuild: true,
+          			shouldWaitForRundeckJob: true,
+          			tags: "",
+          			tailLog: true])
+  			}
            
-            wrap([$class: 'Xvfb', screen: '1440x900x24']) {
-
-  		echo 'Deploying'
-  		sh 'touch cars.dat'
-  		sh 'java -jar /var/lib/jenkins/workspace/Miniproject_pipeline/target/DevOps-1.0-SNAPSHOT.jar'
-		}
-                
-            }
-        }
+    		}
     }
 }
