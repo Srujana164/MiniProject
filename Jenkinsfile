@@ -20,7 +20,7 @@ pipeline {
         stage('Deploy') {
             steps {
              echo 'deploying..'
-             step([$class: "RundeckNotifier"])
+             step([$class: "RunDeck])
     		}
     	}
 	}
