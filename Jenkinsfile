@@ -23,9 +23,9 @@ pipeline {
              echo 'deployment'
     			step([$class: "RundeckNotifier",
           			includeRundeckLogs: true,
-          			URL: http://localhost:4440,
-          			Login: admin,
-          			Password: admin
+          			URL: "http://localhost:4440",
+          			Login: "admin",
+          			Password: "admin",
           			jobId: "1"])
   		}
            
