@@ -22,8 +22,10 @@ pipeline {
              script {
     			step([$class: "RundeckNotifier",
           			includeRundeckLogs: true,
-          			jobId: "1"
-          			nodeFilters: "",])
+          			URL: http://localhost:4440,
+          			Login: admin,
+          			Password: admin
+          			jobId: "1"])
   		}
            
     		}
