@@ -20,6 +20,7 @@ pipeline {
         stage('Deploy') {
             steps {
              echo 'deploying..'
+             script{
              step([$class: "RundeckNotifier",  
              jobId: "20a9f04f-e4ca-4482-9295-3b4a69ce4145",
              nodeFilters: "",
@@ -28,6 +29,7 @@ pipeline {
       		shouldWaitForRundeckJob: true,
       		tags: "",
       		tailLog: true])
+    		}
     		}
     	}
 	}
