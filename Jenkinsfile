@@ -1,11 +1,6 @@
 pipeline {
     agent any
-	node('master') {
-    sh'''
-        echo 'Hello, world!'
-    '''
-    logstashSend failBuild: true, maxLines: 1000
-	
+
     stages {
         stage('Build') {
             steps {
@@ -20,6 +15,7 @@ pipeline {
             steps {
                 echo 'Testing..'
                 sh 'mvn test'
+                logstashSend failBuild: true, maxLines: 1000
             }
         }
         stage('Deploy') {
@@ -35,7 +31,5 @@ pipeline {
       		tailLog: true])
     		}
     	}
-    	
-	}
 	}
 }
