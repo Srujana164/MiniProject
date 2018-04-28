@@ -30,5 +30,11 @@ pipeline {
       		tailLog: true])
     		}
     	}
+    	node('master') {
+    sh'''
+        echo 'Hello, world!'
+    '''
+    logstashSend failBuild: true, maxLines: 1000
+}
 	}
 }
