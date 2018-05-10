@@ -4,24 +4,7 @@ import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.event.*;
 import javax.swing.border.*;
-/**
- * A welcome dialog, which displays basic statistics about the cars in the data file
- * @
- *
- * PUBLIC FEATURES:
- * // Constructors
- *    public WelcomePanel(CarSalesSystem carSys, JPanel dest, String data)
- *
- * // Methods
- *    public void carsUpdated(CarUpdateEvent ev)
- *    public void stateChanged(ChangeEvent ev)
- *
- * COLLABORATORS:
- *
- *
- * @version 1.0, 16 Oct 2004
- * @author Adam Black
- */
+
 public class WelcomePanel extends JPanel implements ChangeListener
 {
 	private CarSalesSystem carSystem;

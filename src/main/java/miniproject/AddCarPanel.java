@@ -3,23 +3,7 @@ import java.util.*;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
-/**
- * The panel used for adding cars to the CarSalesSystem
- * @
- *
- * PUBLIC FEATURES:
- * // Constructors
- *    public AddCarPanel(CarSalesSystem carSys, JPanel dest)
- *
- * // Methods
- *    public void actionPerformed(ActionEvent ev)
- *
- * COLLABORATORS:
- *    CarDetailComponents
- *
- * @version 1.0, 16 Oct 2004
- * @author Adam Black
- */
+
 public class AddCarPanel extends JPanel implements ActionListener
 {
 	private CarSalesSystem carSystem;

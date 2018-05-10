@@ -3,25 +3,7 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.event.*;
-/**
- * A panel used for display information about all cars in the collection
- * @
- *
- * PUBLIC FEATURES:
- * // Constructors
- *    public ShowAllCarsPanel(CarSalesSystem carSys, JPanel dest)
- *
- * // Methods
- *    public void actionPerformed(ActionEvent ev)
- *    public void carsUpdated(CarUpdateEvent ev)
- *    public void stateChanged(ChangeEvent ev)
- *
- * COLLABORATORS:
- *    CarDetailComponents
- *
- * @version 1.0, 16 Oct 2004
- * @author Adam Black
- */
+
 public class ShowAllCarsPanel extends JPanel implements ActionListener, ChangeListener
 {
 	private CarSalesSystem carSystem;

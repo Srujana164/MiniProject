@@ -2,23 +2,7 @@ package miniproject;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
-/**
- * A panel used for obtaining search parameters using car price and distance travelled
- * @
- *
- * PUBLIC FEATURES:
- * // Constructors
- *    public SearchByOtherPanel(CarSalesSystem carSys, JPanel dest)
- *
- * // Methods
- *    public void actionPerformed(ActionEvent ev)
- *
- * COLLABORATORS:
- *    CarDetailComponents
- *
- * @version 1.0, 16 Oct 2004
- * @author Adam Black
- */
+
 public class SearchByOtherPanel extends JPanel implements ActionListener
 {
 	private final String[] price = {"5001-10000", "10001-15000", "15001-20000", "20001-50000",

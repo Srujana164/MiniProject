@@ -3,35 +3,7 @@ import java.util.*;
 import java.io.*;
 import java.awt.*;
 import javax.swing.*;
-/**
- * Stores manufacturers objects, and performs searches
- * @
- *
- * PUBLIC FEATURES:
- * // Constructors
- *    public CarsCollection()
- *    public CarsCollection(Manufacturer man)
- *
- * // Methods
- *    public int addCar(Car c)
- *    public int carsCount()
- *    public int manufacturerCount()
- *    public Car[] getAllCars()
- *    public Manufacturer[] getAllManufacturers()
- *    public double getAverageAge()
- *    public double getAverageDistance()
- *    public double getAveragePrice()
- *    public void loadCars(String file) throws IOException, ClassNotFoundException
- *    public void saveCars(String file) throws IOException
- *    public Car[] search(int minPrice, int maxPrice, double minDistance, double maxDistance)
- *    public Car[] search(int minAge, int maxAge)
- *
- * COLLABORATORS:
- *    Manufacturer
- *
- * @version 1.0, 16 Oct 2004
- * @author Adam Black
- */
+
 public class CarsCollection
 {
 	/**

@@ -2,26 +2,7 @@ package miniproject;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
-/**
- * A simple about dialog.
- * @
- *
- * PUBLIC FEATURES:
- * // Constructors
- *    public AboutDialog(JFrame parent, String title, boolean modal)
- *
- * // Methods
- *    public void actionPerformed(ActionEvent ev)
- *    public void closing()
- *    public void showAbout()
- *    public int addNewCar(Car c)
- *    public void closing()
- *
- * COLLABORATORS:
- *
- * @version 1.0, 16 Oct 2004
- * @author Adam Black
- */
+
 public class AboutDialog extends JDialog implements ActionListener
 {
 	private JButton okButton = new JButton("OK");

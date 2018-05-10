@@ -2,23 +2,7 @@ package miniproject;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
-/**
- * A panel used for obtaining search parameters using car age
- * @
- *
- * PUBLIC FEATURES:
- * // Constructors
- *    public SearchByAgePanel(CarSalesSystem carSys, JPanel dest)
- *
- * // Methods
- *    public void actionPerformed(ActionEvent ev)
- *
- * COLLABORATORS:
- *    CarDetailComponents
- *
- * @version 1.0, 16 Oct 2004
- * @author Adam Black
- */
+
 public class SearchByAgePanel extends JPanel implements ActionListener
 {
 	private final String[] age = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10",
