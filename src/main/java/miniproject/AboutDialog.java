@@ -25,8 +25,6 @@ public class AboutDialog extends JDialog implements ActionListener
 		c.setLayout(new GridLayout(3, 1));
 		setTitle(title);
 		buttonPanel.add(okButton);
-		c.add(new JLabel("Cars Sales System by Adam Black", JLabel.CENTER));
-		c.add(new JLabel("SD2, Assignment 2", JLabel.CENTER));
 		c.add(buttonPanel);
 		okButton.addActionListener(this);
 	}

@@ -1,5 +1,4 @@
 package miniproject;
-
 public class CarUpdateEvent extends java.util.EventObject
 {
 	/**

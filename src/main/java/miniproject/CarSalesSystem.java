@@ -46,7 +46,7 @@ public class CarSalesSystem extends JFrame implements ActionListener, ComponentL
 	private JPanel titlePanel = new JPanel(new GridLayout(2, 1));
 	private JLabel statusLabel = new JLabel();
 	private JLabel pictureLabel = new JLabel();
-	private JLabel carCoLabel = new JLabel("Second hand car market", JLabel.CENTER);
+	private JLabel carCoLabel = new JLabel("Second hand Car Market", JLabel.CENTER);
 	private JLabel salesSysLabel = new JLabel("Car Sales System", JLabel.CENTER);
 	private JTabbedPane theTab = new JTabbedPane(JTabbedPane.LEFT);
 	private JMenuBar menuBar = new JMenuBar();
@@ -114,8 +114,6 @@ public class CarSalesSystem extends JFrame implements ActionListener, ComponentL
 
 		// load the picture into the top panel
 		pictureLabel.setIcon(new ImageIcon("vu.png"));
-		//pictureLabel.setIcon(new ImageIcon("image1.jpeg"));
-		
 		titlePanel.add(carCoLabel);
 		titlePanel.add(salesSysLabel);
 		topPanel.add(pictureLabel, "West");

@@ -1,28 +1,6 @@
 package miniproject;
 import java.util.*;
-/**
- * Stores and retrieves Car objects
- * @
- *
- * PUBLIC FEATURES:
- * // Constructors
- *    public Manufacturer(String nam, Car c)
- *
- * // Methods
- *    public void addCar(Car c)
- *    public int carCount()
- *    public Car[] getAllCars()
- *    public Car[] getAllCars()
- *    public String getManufacturerName()
- *    private Car[] resizeArray(Car[] c, int extendBy)
- *    public void setManufacturersName(String nam)
- *
- * COLLABORATORS:
- *    Car
- *
- * @version 1.0, 16 Oct 2004
- * @author Adam Black
- */
+
 public class Manufacturer implements java.io.Serializable
 {
 	private String manufacturer;		//name of manufacturer
